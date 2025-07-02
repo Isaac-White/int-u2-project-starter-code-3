@@ -1,33 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Unit 2 Starter Code, Option 3</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac White | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- The code below uses a header tag. This is the black section on the page where the title of the page is displayed. -->
-  <header>
-    <h1>Title of Webpage</h1>
-  </header>
-  <div class="section">
-    <h1>Section 1</h1>
-    <!-- Add text, images, and links for section 1 below. -->
-
-  </div>
-  <hr> <!-- The hr tag creates that line you see between sections -->
-  <div class="section">
-    <h1>Section 2</h1>
-    <!-- Add text, images, and links for section 2 below. -->
-
-  </div>
-  <hr>
-  <div class="section">
-    <h1>Section 3</h1>
-    <!-- Add text, images, and links for section 3 below. -->
-
-  </div>
-
+    <!-- Carousel at the very top -->
+    <div class="carousel-container">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div class="carousel-track">
+            <div class="carousel-slide"><img src="IMG_7033.jpg" alt="Photo 1"></div>
+            <div class="carousel-slide"><img src="IMG_4946.jpg" alt="Photo 2"></div>
+            <div class="carousel-slide"><img src="IMG_4943.jpg" alt="Photo 3"></div>
+            <div class="carousel-slide"><img src="IMG_3789.JPG" alt="Recent Photo"></div>
+            <div class="carousel-slide"><img src="IMG_3795.jpeg" alt= "Photo 5"></div>
+            <div class="carousel-slide"><img src="CA709BA1-5049-4545-BFE9-03C0EEA07245.JPG" alt="Photo 6"></div>
+            <div class="carousel-slide"><img src="A9A792A4-D8CE-4D5F-8E59-865A3AE4EE22.JPG" alt="Photo 7"></div>
+            <div class="carousel-slide"><img src="8262576755555753086.jpeg" alt="Photo 8"></div>
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
+        <div class="carousel-dots"></div>
+    </div>
+    <header>
+        <h1 class="animated-name">Isaac White</h1>
+        <p>Aspiring Software Engineer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <img src="IMG_3789.JPG" alt="Isaac White" class="hero-img">
+        <h2>About Me</h2>
+            <p>
+            I'm an incoming freshman at Indiana University Indianapolis, majoring in Computer Science. My journey so far has been shaped by more than academics, it's been defined by discipline, resilience, and a deep love for the game of football. Over the past four years, I poured my heart into the sport, learning what it means to lead, to be accountable, and to push through adversity. The field taught me how to connect with others, communicate under pressure, and grow into the kind of person others can count on.<br><br>
+            Away from the stadium lights and the classroom, I find peace casting a line. Fishing has become my favorite way to slow down and reconnect with myself. It has a way of slowing life down just enough for me to catch my breath and clear my head. It's taught me that progress doesn't always come with noise or speed. Sometimes, it's about showing up early, staying patient, and trusting things will come together if I stick with it. There's a calm in the waiting, and I've learned to appreciate those quiet, in between moments not as empty space, but as time to reflect and reset. Out there, with just the water and my thoughts, I've become more intentional in how I tackle problems. I'm less rushed and more focused. I've learned that the journey matters just as much as the outcome, and that some of the best lessons come when I least expect them.<br><br>
+            As I prepare to begin my college journey, I'm excited to bring those values with me. I'm happy to be blending technical curiosity with grounded leadership, and using every moment whether fast paced or calm as fuel for growth.
+            </p>  
+  </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                 <h3>Project One</h3>
+                 <p>This is my first project, it is by far the most simple project in my portfolio. It was built almost entirely using HTML, with a few minimal CSS styles added for subtle structure and visual polish..</p>
+              <a href="https://isaac-white.github.io/int-u2-project-starter-code-1/" target="_blank" class="project-link">
+           View This Website
+                    </a>
+            </div>
+                <div class="project">
+               <h3>Project Two</h3>
+                <p>This is my second project. This project features a heavy reliance on JavaScript, and have some css to bring everything together.</p>
+             <a href="https://isaac-white.github.io/int-u3-project-starter-code/" target="_blank" class="project-link">
+          View This Website
+            </a>
+                </div>
+                <div class="project">
+              <h3>Project Three</h3>
+              <p>This is my third project, where I brought together my skills in HTML, JavaScript, and CSS to create something more advanced and interactive..</p>
+             <a href="https://isaac-white.github.io/int-u4-project-23-24-starter-code/" target="_blank" class="project-link">
+                 View This Website
+                  </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+               <div class="contact-info">
+    <p>Email: <a href="isaacwhite906@gmail.com">isaacwhite906@gmail.com</a></p>
+    <p>Phone: <a href="tel:3177934387">317-793-4387</a></p>
+    <form class="contact-form" action="https://formspree.io/f/xqabnrwk" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <button type="submit">Send Message</button>
+</form>
+</div>
+            </div>
+        </section>
+    </div>
+   <footer>
+    <div class="footer-main">
+        &copy; 2025 Isaac White. All rights reserved.
+    </div>
+    <div class="footer-verse">
+        <em>Proverbs 14:23</em> &mdash; <span>"In all labor there is profit, but mere talk leads only to poverty."</span>
+    </div>
+</footer>
+    <script src="java.js"></script>
 </body>
-
 </html>
